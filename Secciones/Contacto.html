@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="hotel, spa, belgrano, capital-federal, contacto, newsletter, descuentos, novedades.">
+  <meta name="description" content="Contactate con nosotros via mail o whatsapp. Suscribite a nuestro newsletter y recibi las ultimas promociones. Seguinos en nuestras redes sociales.">
+  <link rel="stylesheet" href="../Estilos/style.css">
+  <title>Contactate con nosotros</title>
+</head>
+
+<body>
+  <header class="header">
+    <a href="../index.html"><img class="header__bannerLogo" src="../img/holiday-gad7493e63_1515.jpg"
+        alt="pileta spa"></a>
+    <nav class="header__seccionesNavegacion">
+      <ul class="header__listaServicios">
+        <li><a href="./servicios.html">Servicios</a></li>
+        <li><a href="./Promociones.html">Promociones</a></li>
+        <li><a href="./sobre-nosotros.html">Sobre Nosotros</a></li>
+        <li><a href="./contacto.html">Contacto</a></li>
+        <li><a href="./staff.html">Sumate a nuestro equipo</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <h1>Contactate con nosotros</h1>
+
+  <!-- FORMULARIO !-->
+  <div id="contactoPadre">
+    <div class="contactoPadre__formulario">
+      <form action="" method="" id="formulario">
+        <fieldset>
+          <h2>Unete como miembro de nuestro salon y recibe descuentos</h2>
+          <div>
+            <label for="usuarioNombre">Nombre:</label>
+            <input type="text" name:"usuarioNombre" id="usuarioNombre" placeholder="Ingrese su nombre" required>
+          </div>
+          <div>
+            <div>
+              <label for="usuarioApellido">Apellido:</label>
+              <input type="text" name:"usuarioApellido" id="usuarioApellido" placeholder="Ingrese su Apellido" required>
+            </div>
+          </div>
+          <div>
+            <label for="mail">Ingrese su mail</label>
+            <input type="email" name="mail" id="mail" placeholder="Ingrese su email" required>
+          </div>
+          <div>
+            <label for="elijaSuPlan">Elija su plan:</label>
+            <select name="plan" id="plan">
+
+              <option value="mensual">Plan Mensual</option>
+              <option value="cuatrimestral">Plan cuatrimestral</option>
+              <option value="anual">Plan anual</option>
+            </select>
+          </div>
+          <label for="acuerdo">Esta de acuerdo en recibir promociones?</label>
+          <label for="siAcuerdo">Sí</label>
+          <input type="radio" name="siAcuerdo" value="siAcuerdo">
+          <label for="noAcuerdo">No</label>
+          <input type="radio" name="noAcuerdo" value="noAcuerdo">
+
+          <input type="reset" value="Reset">
+          <input type="submit" value="Enviar">
+        </fieldset>
+      </form>
+    </div>
+
+    <div class="contactoPadre__dondeEstamos">
+      <h3 id="dondeEstamos">¿Donde estamos?</h3>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1112.388081184144!2d-58.44734775757849!3d-34.56349272129599!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb5cec54a6f7b%3A0x5c54d68486a3f9fa!2sVirrey%20del%20Pino%201890%2C%20C1426EGF%20CABA!5e0!3m2!1ses-419!2sar!4v1633996010772!5m2!1ses-419!2sar"
+        width="500" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      <!-- incrustar mapa !-->
+    </div>
+
+    <div>
+      <h3 id="newsletter">Recibi todas las novedades</h3>
+      <img class="contactoPadre__img" src="../img/newsletter1.jpg" alt="">
+      <!-- boton para newsletter o linea para completar con mail !-->
+    </div>
+    <div>
+      <h3 id="contactoRedes">Seguinos en nuestras redes sociales</h3>
+      <img class="contactoPadre__img" src="../img/cv3w.jpg" alt="">
+      <!-- botones con las redes sociales !-->
+    </div>
+  </div>
+
+  <footer class="footer">
+    <p class="footer__datosContacto">DATOS DE CONTACTO</p>
+  </footer>
+
+</body>
+
+</html>

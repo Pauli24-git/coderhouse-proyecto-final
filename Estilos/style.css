@@ -284,4 +284,46 @@ h3 {
   margin-top: 2rem;
   padding: 1rem;
   font-size: large;
+}
+
+.seccionPromo_link {
+  background-color: #F1D4D4;
+  color: #790C5A;
+  border-color: #F1D4D4;
+}
+
+.textoIndex {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+}
+
+.textoHijo {
+  background-color: #790C5A;
+  margin: 1rem;
+  padding: 1rem;
+  align-content: center;
+  color: #F1D4D4;
+  text-align: center;
+}
+
+.slide-top {
+  -webkit-animation: slide-top 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) 1000ms both;
+  animation: slide-top 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) 1000ms both;
+}
+
+@-webkit-keyframes slide-top {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-100px);
+  }
+}
+@keyframes slide-top {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-100px);
+  }
 }/*# sourceMappingURL=style.css.map */

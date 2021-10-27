@@ -23,10 +23,6 @@ $breakpoints:(sm: 0px,
     }
 }
 
-body {
-    background-color: aqua;
-}
-
 * {
     margin: 0;
     padding: 0;
@@ -39,12 +35,6 @@ a {
     color: #790C5A;
     transition: background-color .5s;
 }
-
-a:hover {
-    color: rosybrown;
-
-}
-
 
 body {
     background-color: #F1D4D4;
@@ -90,6 +80,8 @@ footer {
 .footer__datosContacto {
     color: white;
     margin: 0px;
+    display: inline;
+    text-align: right;
 }
 
 
@@ -116,11 +108,6 @@ h1 {
     @include colorSombreado();
 }
 
-/*#bannerLogo {
-    width: 100vw;
-    height: 450px;
-
-*/
 .header__listaServicios {
     list-style: none;
 }
@@ -148,12 +135,6 @@ h1 {
     flex-direction: row;
     justify-content: center;
 }
-
-/* .textoIndex {
-    display: grid;
-    grid-template-columns: 30% 40% 30%;
-}
-*/
 
 .textoHijo {
     background-color: white;
@@ -184,36 +165,13 @@ h1 {
     justify-content: right;
     margin: 1rem;
     margin-top: 60px;
+    text-align: center;
 }
 
 #videoSalon {
     justify-content: left;
     margin: 2rem;
 }
-
-/* .promos__promociones {
-    padding: 100px;
-    margin: 50px;
-    background-color: #790C5A;
-    justify-content: center;
-    align-items: center;
-}
-
-.promos__hijo {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 50% 50%;
-}
-
-.promos__titulo {
-    grid-column: 1/3;
-    grid-row: 1/2;
-}
-
-.promos__promociones {
-    grid-row: 2/3;
-}
-*/
 
 #contactoPadre {
     display: grid;
@@ -249,7 +207,7 @@ h3 {
     padding: 30px;
     font-weight: bolder;
     font-style: italic;
-    @include colorSombreado();
+    color: #790C5A;
 }
 
 .card {
@@ -330,28 +288,30 @@ h3 {
 
 
 .slide-top {
-	-webkit-animation: slide-top 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1000ms both;
-	        animation: slide-top 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1000ms both;
+    -webkit-animation: slide-top 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1000ms both;
+    animation: slide-top 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1000ms both;
 }
 
- @-webkit-keyframes slide-top {
+@-webkit-keyframes slide-top {
     0% {
-      -webkit-transform: translateY(0);
-              transform: translateY(0);
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
     }
+
     100% {
-      -webkit-transform: translateY(-100px);
-              transform: translateY(-100px);
+        -webkit-transform: translateY(-100px);
+        transform: translateY(-100px);
     }
-  }
-  @keyframes slide-top {
+}
+
+@keyframes slide-top {
     0% {
-      -webkit-transform: translateY(0);
-              transform: translateY(0);
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
     }
+
     100% {
-      -webkit-transform: translateY(-100px);
-              transform: translateY(-100px);
+        -webkit-transform: translateY(-100px);
+        transform: translateY(-100px);
     }
-  }
-  
+}

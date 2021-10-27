@@ -1,8 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Hind+Siliguri&display=swap");
-body {
-  background-color: aqua;
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -14,10 +10,6 @@ a {
   text-decoration: none;
   color: #790C5A;
   transition: background-color 0.5s;
-}
-
-a:hover {
-  color: rosybrown;
 }
 
 body {
@@ -64,6 +56,8 @@ footer {
 .footer__datosContacto {
   color: white;
   margin: 0px;
+  display: inline;
+  text-align: right;
 }
 
 h2 {
@@ -94,11 +88,6 @@ h1 {
   text-transform: uppercase;
 }
 
-/*#bannerLogo {
-    width: 100vw;
-    height: 450px;
-
-*/
 .header__listaServicios {
   list-style: none;
 }
@@ -127,11 +116,6 @@ h1 {
   justify-content: center;
 }
 
-/* .textoIndex {
-    display: grid;
-    grid-template-columns: 30% 40% 30%;
-}
-*/
 .textoHijo {
   background-color: white;
   margin: 1rem;
@@ -161,6 +145,7 @@ h1 {
   justify-content: right;
   margin: 1rem;
   margin-top: 60px;
+  text-align: center;
 }
 
 #videoSalon {
@@ -168,29 +153,6 @@ h1 {
   margin: 2rem;
 }
 
-/* .promos__promociones {
-    padding: 100px;
-    margin: 50px;
-    background-color: #790C5A;
-    justify-content: center;
-    align-items: center;
-}
-
-.promos__hijo {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 50% 50%;
-}
-
-.promos__titulo {
-    grid-column: 1/3;
-    grid-row: 1/2;
-}
-
-.promos__promociones {
-    grid-row: 2/3;
-}
-*/
 #contactoPadre {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -227,9 +189,6 @@ h3 {
   font-weight: bolder;
   font-style: italic;
   color: #790C5A;
-  font-weight: bolder;
-  text-shadow: 2px 2px #000000;
-  text-transform: uppercase;
 }
 
 .card {

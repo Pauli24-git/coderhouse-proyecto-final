@@ -16,34 +16,74 @@ body {
   background-color: #F1D4D4;
 }
 
-.header__bannerLogo {
-  width: 100%;
+.barraDeNavegacion__imagen {
+  height: 300px;
+  background-image: url(../img/resort.jpg);
+  background-position: center;
+  width: vw;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: grid;
 }
 
-.header__seccionesNavegacion li {
-  display: inline-block;
-  background-color: #790C5A;
-  padding: 15px;
-  border: #790C5A;
-  border-radius: 1rem;
-  margin: 18px;
+.header__link {
+  margin: auto;
 }
+
 @media screen and (min-width: 0px) {
-  .header__seccionesNavegacion li {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
+  .header__logo {
+    height: 250px;
   }
 }
-@media screen and (min-width: 0px) and (min-width: 768px) {
-  .header__seccionesNavegacion li {
-    display: inline-block;
+@media screen and (min-width: 768px) {
+  .header__logo {
+    height: 320px;
   }
 }
+
+.header {
+  background-color: lightpink;
+}
 @media screen and (min-width: 0px) {
-  .header__seccionesNavegacion li a {
-    text-decoration: none;
-    color: whitesmoke;
+  .header {
+    height: 800px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .header {
+    height: 345px;
+  }
+}
+
+@media screen and (min-width: 0px) {
+  .header__listaServicios li {
+    display: inline;
+  }
+}
+
+.header__listaServicios {
+  display: flex;
+}
+@media screen and (min-width: 0px) {
+  .header__listaServicios {
+    height: 40px;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .header__listaServicios {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 0px) {
+  .header__listaServicios li {
+    margin: 1rem;
+    padding: 1rem;
+    font-size: 25px;
   }
 }
 
@@ -285,4 +325,7 @@ h3 {
   100% {
     transform: translateY(-100px);
   }
+}
+.seccionPromo {
+  width: 18rem;
 }/*# sourceMappingURL=style.css.map */

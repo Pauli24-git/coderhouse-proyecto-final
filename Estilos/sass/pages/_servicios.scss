@@ -1,0 +1,15 @@
+.tablaPromo {
+    @include estiloServicios();
+}
+
+.tablaPromo__lista td {
+    padding: 50px;
+}
+
+.tablaPromo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: white;
+    margin: 3rem;
+}

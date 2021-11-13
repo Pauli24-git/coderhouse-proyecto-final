@@ -1,0 +1,34 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: #790C5A;
+    transition: background-color .5s;
+}
+
+body {
+    background-color: #F1D4D4;
+}
+
+h1 {
+    text-align: center;
+    @include colorSombreado();
+}
+
+h2 {
+    text-align: center;
+    color: #790C5A;
+    font-weight: bolder;
+}
+
+h3 {
+    text-align: center;
+    padding: 30px;
+    font-weight: bolder;
+    font-style: italic;
+    color: #790C5A;
+}

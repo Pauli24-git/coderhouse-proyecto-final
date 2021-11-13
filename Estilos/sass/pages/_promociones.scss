@@ -1,0 +1,22 @@
+.promos__hijo {
+    display: grid;
+    grid-row: 50% 50%;
+}
+
+.promos__img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    padding: 1rem;
+}
+
+.seccionPromo_link {
+    background-color: #F1D4D4;
+    color: #790C5A;
+    border-color: #F1D4D4;
+}
+
+.seccionPromo {
+    width: 18rem;
+}

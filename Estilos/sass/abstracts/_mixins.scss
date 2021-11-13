@@ -1,0 +1,18 @@
+@mixin colorSombreado {
+    color: #790C5A;
+    font-weight: bolder;
+    text-shadow: 2px 2px #000000;
+    text-transform: uppercase;
+}
+
+@mixin estiloServicios {
+    color: black;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+@mixin responsive($breakpoint) {
+    @media screen and (min-width: map-get($breakpoints, $breakpoint)) {
+        @content;
+    }
+}

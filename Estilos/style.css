@@ -1,9 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Hind+Siliguri&display=swap");
 * {
+  font-family: Hind Siliguri;
+}
+
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Hind Siliguri;
 }
 
 a {
@@ -14,6 +17,28 @@ a {
 
 body {
   background-color: #F1D4D4;
+}
+
+h1 {
+  text-align: center;
+  color: #790C5A;
+  font-weight: bolder;
+  text-shadow: 2px 2px #000000;
+  text-transform: uppercase;
+}
+
+h2 {
+  text-align: center;
+  color: #790C5A;
+  font-weight: bolder;
+}
+
+h3 {
+  text-align: center;
+  padding: 30px;
+  font-weight: bolder;
+  font-style: italic;
+  color: #790C5A;
 }
 
 .barraDeNavegacion__imagen {
@@ -87,61 +112,6 @@ body {
   }
 }
 
-footer {
-  background-color: #790C5A;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  color: whitesmoke;
-}
-@media screen and (min-width: 0px) {
-  footer {
-    flex-direction: column;
-    height: 350px;
-    justify-content: space-between;
-    padding: 1rem;
-  }
-}
-@media screen and (min-width: 1024px) {
-  footer {
-    flex-direction: row;
-    height: 150px;
-  }
-}
-
-.footer__img {
-  height: 45px;
-  width: 65px;
-}
-
-h2 {
-  text-align: center;
-  color: #790C5A;
-  font-weight: bolder;
-}
-
-.bienvenida {
-  margin: 1rem;
-}
-
-.tablaPromo {
-  color: black;
-  font-weight: bold;
-  text-transform: capitalize;
-}
-
-.tablaPromo__lista td {
-  padding: 50px;
-}
-
-h1 {
-  text-align: center;
-  color: #790C5A;
-  font-weight: bolder;
-  text-shadow: 2px 2px #000000;
-  text-transform: uppercase;
-}
-
 .header__listaServicios {
   list-style: none;
 }
@@ -170,41 +140,31 @@ h1 {
   justify-content: center;
 }
 
-.textoHijo {
-  background-color: white;
-  margin: 1rem;
-  padding: 1rem;
-  align-content: center;
-}
-
-.tablaPromo {
+footer {
+  background-color: #790C5A;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  background-color: white;
-  margin: 3rem;
+  justify-content: space-evenly;
+  align-items: center;
+  color: whitesmoke;
+}
+@media screen and (min-width: 0px) {
+  footer {
+    flex-direction: column;
+    height: 350px;
+    justify-content: space-between;
+    padding: 1rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  footer {
+    flex-direction: row;
+    height: 150px;
+  }
 }
 
-.staff__fotos {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-}
-
-.sobreNosotros {
-  display: flex;
-}
-
-.sobreNosotros__historia {
-  justify-content: right;
-  margin: 1rem;
-  margin-top: 60px;
-  text-align: center;
-}
-
-#videoSalon {
-  justify-content: left;
-  margin: 2rem;
+.footer__img {
+  height: 45px;
+  width: 65px;
 }
 
 #contactoPadre {
@@ -213,65 +173,6 @@ h1 {
   grid-template-rows: 40% 60%;
   justify-items: center;
   align-items: center;
-}
-
-.staff {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 50px 50px 350px 100px;
-  grid-row-gap: 5px;
-}
-
-.hotSale {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 1fr;
-  padding: 50px;
-  -moz-column-gap: 1em;
-       column-gap: 1em;
-}
-
-.hotSale__promo {
-  background-color: whitesmoke;
-  margin: 10px;
-  padding: 100px;
-}
-
-h3 {
-  text-align: center;
-  padding: 30px;
-  font-weight: bolder;
-  font-style: italic;
-  color: #790C5A;
-}
-
-.card {
-  padding: 10px;
-  align-items: flex-start;
-  margin-left: 4rem;
-}
-
-.accordion {
-  padding: 2rem;
-  margin: 1rem;
-}
-
-.promos__hijo {
-  display: grid;
-  grid-row: 50% 50%;
-}
-
-.promos__img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 70%;
-  padding: 1rem;
-}
-
-.carousel {
-  width: 790px;
-  height: 460px;
 }
 
 .contactoPadre__formulario {
@@ -290,33 +191,62 @@ h3 {
   width: 500px;
 }
 
-.staff__cv {
-  background-color: snow;
-  color: black;
-  text-align: center;
-  margin-top: 2rem;
-  padding: 1rem;
-  font-size: large;
+.bienvenida {
+  margin: 1rem;
 }
 
-.seccionPromo_link {
-  background-color: #F1D4D4;
-  color: #790C5A;
-  border-color: #F1D4D4;
+.contenedores {
+  display: flex;
+  gap: 1rem;
+  margin: 1rem;
+}
+@media screen and (min-width: 0px) {
+  .contenedores {
+    flex-direction: column;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .contenedores {
+    flex-direction: row;
+  }
+}
+
+.cont__img1 {
+  background-image: url(../img/sparelax.jpg);
+}
+
+.cont__img2 {
+  background-image: url(../img/manicure.jpg);
+}
+
+.cont__img3 {
+  background-image: url(../img/hotstone.jpg);
+}
+
+.hotSale {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr;
+  padding: 50px;
+  -moz-column-gap: 1em;
+       column-gap: 1em;
+}
+
+.card {
+  padding: 10px;
+  align-items: flex-start;
+  margin-left: 4rem;
+}
+
+.hotSale__promo {
+  background-color: whitesmoke;
+  margin: 10px;
+  padding: 100px;
 }
 
 .textoIndex {
   display: grid;
   grid-template-columns: 33% 33% 33%;
-}
-
-.textoHijo {
-  background-color: #790C5A;
-  margin: 1rem;
-  padding: 1rem;
-  align-content: center;
-  color: #F1D4D4;
-  text-align: center;
 }
 
 .slide-top {
@@ -340,6 +270,90 @@ h3 {
     transform: translateY(-100px);
   }
 }
+.cont1 {
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+}
+
+.cont__texto {
+  height: 300px;
+  width: 500px;
+  background-color: #790C5A;
+}
+.cont__texto p {
+  color: #F1D4D4;
+  text-align: center;
+  padding-top: 1rem;
+}
+
+.promos__hijo {
+  display: grid;
+  grid-row: 50% 50%;
+}
+
+.promos__img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+  padding: 1rem;
+}
+
+.seccionPromo_link {
+  background-color: #F1D4D4;
+  color: #790C5A;
+  border-color: #F1D4D4;
+}
+
 .seccionPromo {
   width: 18rem;
+}
+
+.tablaPromo {
+  color: black;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.tablaPromo__lista td {
+  padding: 50px;
+}
+
+.tablaPromo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-color: white;
+  margin: 3rem;
+}
+
+.sobreNosotros {
+  display: flex;
+}
+
+.sobreNosotros__historia {
+  justify-content: right;
+  margin: 1rem;
+  margin-top: 60px;
+  text-align: center;
+}
+
+#videoSalon {
+  justify-content: left;
+  margin: 2rem;
+}
+
+.carousel {
+  width: 790px;
+  height: 460px;
+}
+
+.staff__cv {
+  background-color: snow;
+  color: black;
+  text-align: center;
+  margin-top: 2rem;
+  padding: 1rem;
+  font-size: large;
 }/*# sourceMappingURL=style.css.map */

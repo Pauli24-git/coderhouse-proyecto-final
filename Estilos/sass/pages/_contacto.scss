@@ -1,24 +1,11 @@
+.formulario{
+    width: 95vw;
+    margin: auto;
+}
 
-#contactoPadre {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 40% 60%;
-    justify-items: center;
+.contactoPadre__dondeEstamos{
+    display: flex;
+    flex-direction: column;
     align-items: center;
-}
-
-.contactoPadre__formulario {
-    margin-left: 2rem;
-    margin-top: 6rem;
-}
-
-.contactoPadre__dondeEstamos {
-    margin-left: 6rem;
-    align-content: center;
-}
-
-.contactoPadre__img {
-    margin: 3rem;
-    height: 450px;
-    width: 500px;
+    margin-bottom: 1rem;
 }

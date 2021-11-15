@@ -1,15 +1,102 @@
-.tablaPromo {
-    @include estiloServicios();
+.servicios {
+    display: grid;
+    height: 500px;
+    margin: 1rem;
+    grid-template-columns: 10% 40% 40% 10%;
+    grid-template-rows: 10% 40% 40% 10%;
+
 }
 
-.tablaPromo__lista td {
-    padding: 50px;
+.servicios__contenido {
+    display: grid;
+    background-color: rgba(255, 255, 255, .15);
+    backdrop-filter: blur(5px);
+    border-style: solid;
+    border-radius: 30px;
+
+    @include responsive(sm) {
+        grid-column-start: 2;
+        grid-column-end: 4;
+        grid-row-start: 2;
+        grid-row-end: 4;
+
+        grid-template-columns: 100%;
+        grid-template-rows: 10% 70% 20% ;
+    }
+
+    @include responsive(md) {
+        grid-column-start: 2;
+        grid-column-end: 4;
+        grid-row-start: 2;
+        grid-row-end: 3;
+
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 30% 70%;
+    }
 }
 
-.tablaPromo {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    background-color: white;
-    margin: 3rem;
+.servicios {
+    background-position: center;
+    width: vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.servicios__titulo {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.servicios__listado {
+    list-style: none;
+
+    @include responsive(sm) {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        text-align: center;
+        margin-right: 20px;
+    }
+
+    @include responsive(md) {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+
+}
+
+.servicio__detalles{
+    @include responsive(sm) {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 3;
+        grid-row-end: 4;
+        text-align: center;
+        font-size: 3rem;
+        font-weight: 800;
+    }
+
+    @include responsive(md) {
+        grid-column-start: 2;
+        grid-column-end: 4;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+}
+
+.tarjetaServicios1 {
+    background-image: url('../../../img/massage-g9a3a5baf7_1920.jpg');
+}
+
+.tarjetaServicios2 {
+    background-image: url('../../../img/massage-therapy-g0663311ae_1280.jpg');
+}
+
+.tarjetaServicios3 {
+    background-image: url('../../../img/spahotel1.jpg')
 }

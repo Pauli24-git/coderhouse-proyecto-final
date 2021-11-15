@@ -1,103 +1,62 @@
 .bienvenida {
-    margin: 1rem;
+    margin: 2rem;
 }
 
-.contenedores {
+.tarjetasBienvenida {
     display: flex;
-    gap: 1rem;
+    flex-wrap: wrap;
+    row-gap: 1rem;
+    ;
+    justify-content: space-around;
+    align-items: center;
     margin: 1rem;
-
-
-    @include responsive (sm) {
-        flex-direction: column;
-    }
-
-    @include responsive (lg) {
-        flex-direction: row;
-    }
 }
 
-.cont__img1 {
-    background-image: url(../img/sparelax.jpg);
+.tarjetasBienvenida__tarjeta {
+    width: 300px;
+    height: 700px;
+    background-color: white;
+    padding: 1rem;
+    border-style: solid;
+    border-color: white;
+    border-radius: 30px;
 }
 
-.cont__img2 {
-    background-image: url(../img/manicure.jpg);
-}
-
-.cont__img3 {
-    background-image: url(../img/hotstone.jpg);
-}
-
-
-.hotSale {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 1fr;
-    padding: 50px;
-    column-gap: 1em;
+.tarjetasBienvenida__imagen {
+    width: 100%;
 }
 
 .card {
-    padding: 10px;
-    align-items: flex-start;
-    margin-left: 4rem;
-}
+    background-color: #fff;
+    border-radius: 0.5rem;
+    box-shadow: 0.05rem 0.1rem 0.3rem -0.03rem rgba(0, 0, 0, 0.45);
+    padding-bottom: 1rem;
+    margin-right: 6rem;
 
-.hotSale__promo {
-    background-color: whitesmoke;
-    margin: 10px;
-    padding: 100px;
-}
-
-.textoIndex {
-    display: grid;
-    grid-template-columns: 33% 33% 33%;
-}
-
-.slide-top {
-    -webkit-animation: slide-top 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1000ms both;
-    animation: slide-top 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1000ms both;
-}
-
-@-webkit-keyframes slide-top {
-    0% {
-        -webkit-transform: translateY(0);
-        transform: translateY(0);
-    }
-
-    100% {
-        -webkit-transform: translateY(-100px);
-        transform: translateY(-100px);
+    img {
+        border-radius: 0.5rem 0.5rem 0 0;
+        width: 100%;
+        object-fit: cover;
+        aspect-ratio: 4/3;
+        mix-blend-mode: overlay;
     }
 }
 
-@keyframes slide-top {
-    0% {
-        -webkit-transform: translateY(0);
-        transform: translateY(0);
-    }
-
-    100% {
-        -webkit-transform: translateY(-100px);
-        transform: translateY(-100px);
-    }
-}
-
-.cont1 {
+.tarjetasHotSale {
     display: flex;
-    gap: 1rem;
-    flex-direction: column;
-}
+    flex-wrap: wrap;
+    row-gap: 1rem;
+    ;
+    justify-content: space-around;
+    align-items: center;
 
-.cont__texto {
-    height: 300px;
-    width: 500px;
-    background-color: #790C5A;
-
-    & p {
-        color: #F1D4D4;
-        text-align: center;
-        padding-top: 1rem;
+    @include responsive(sm) {
+        margin-left: 20%;
     }
+
+    @include responsive(md) {
+        margin: 1rem;
+        margin-left: 5rem;
+    }
+
 }

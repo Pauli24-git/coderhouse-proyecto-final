@@ -167,124 +167,78 @@ footer {
   width: 65px;
 }
 
-#contactoPadre {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 40% 60%;
-  justify-items: center;
-  align-items: center;
-}
-
-.contactoPadre__formulario {
-  margin-left: 2rem;
-  margin-top: 6rem;
+.formulario {
+  width: 95vw;
+  margin: auto;
 }
 
 .contactoPadre__dondeEstamos {
-  margin-left: 6rem;
-  align-content: center;
-}
-
-.contactoPadre__img {
-  margin: 3rem;
-  height: 450px;
-  width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1rem;
 }
 
 .bienvenida {
-  margin: 1rem;
+  margin: 2rem;
 }
 
-.contenedores {
+.tarjetasBienvenida {
   display: flex;
-  gap: 1rem;
+  flex-wrap: wrap;
+  row-gap: 1rem;
+  justify-content: space-around;
+  align-items: center;
   margin: 1rem;
 }
-@media screen and (min-width: 0px) {
-  .contenedores {
-    flex-direction: column;
-  }
-}
-@media screen and (min-width: 1024px) {
-  .contenedores {
-    flex-direction: row;
-  }
+
+.tarjetasBienvenida__tarjeta {
+  width: 300px;
+  height: 700px;
+  background-color: white;
+  padding: 1rem;
+  border-style: solid;
+  border-color: white;
+  border-radius: 30px;
 }
 
-.cont__img1 {
-  background-image: url(../img/sparelax.jpg);
-}
-
-.cont__img2 {
-  background-image: url(../img/manicure.jpg);
-}
-
-.cont__img3 {
-  background-image: url(../img/hotstone.jpg);
-}
-
-.hotSale {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 1fr;
-  padding: 50px;
-  -moz-column-gap: 1em;
-       column-gap: 1em;
+.tarjetasBienvenida__imagen {
+  width: 100%;
 }
 
 .card {
-  padding: 10px;
-  align-items: flex-start;
-  margin-left: 4rem;
+  background-color: #fff;
+  border-radius: 0.5rem;
+  box-shadow: 0.05rem 0.1rem 0.3rem -0.03rem rgba(0, 0, 0, 0.45);
+  padding-bottom: 1rem;
+  margin-right: 6rem;
+}
+.card img {
+  border-radius: 0.5rem 0.5rem 0 0;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  aspect-ratio: 4/3;
+  mix-blend-mode: overlay;
 }
 
-.hotSale__promo {
-  background-color: whitesmoke;
-  margin: 10px;
-  padding: 100px;
-}
-
-.textoIndex {
-  display: grid;
-  grid-template-columns: 33% 33% 33%;
-}
-
-.slide-top {
-  -webkit-animation: slide-top 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) 1000ms both;
-  animation: slide-top 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) 1000ms both;
-}
-
-@-webkit-keyframes slide-top {
-  0% {
-    transform: translateY(0);
-  }
-  100% {
-    transform: translateY(-100px);
-  }
-}
-@keyframes slide-top {
-  0% {
-    transform: translateY(0);
-  }
-  100% {
-    transform: translateY(-100px);
-  }
-}
-.cont1 {
+.tarjetasHotSale {
   display: flex;
-  gap: 1rem;
-  flex-direction: column;
+  flex-wrap: wrap;
+  row-gap: 1rem;
+  justify-content: space-around;
+  align-items: center;
 }
-
-.cont__texto {
-  height: 300px;
-  width: 500px;
-  background-color: #790C5A;
+@media screen and (min-width: 0px) {
+  .tarjetasHotSale {
+    margin-left: 20%;
+  }
 }
-.cont__texto p {
-  color: #F1D4D4;
-  text-align: center;
-  padding-top: 1rem;
+@media screen and (min-width: 768px) {
+  .tarjetasHotSale {
+    margin: 1rem;
+    margin-left: 5rem;
+  }
 }
 
 .promos__hijo {
@@ -310,43 +264,169 @@ footer {
   width: 18rem;
 }
 
-.tablaPromo {
-  color: black;
-  font-weight: bold;
-  text-transform: capitalize;
+.servicios {
+  display: grid;
+  height: 500px;
+  margin: 1rem;
+  grid-template-columns: 10% 40% 40% 10%;
+  grid-template-rows: 10% 40% 40% 10%;
 }
 
-.tablaPromo__lista td {
-  padding: 50px;
+.servicios__contenido {
+  display: grid;
+  background-color: rgba(255, 255, 255, 0.15);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  border-style: solid;
+  border-radius: 30px;
+}
+@media screen and (min-width: 0px) {
+  .servicios__contenido {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    grid-template-columns: 100%;
+    grid-template-rows: 10% 70% 20%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .servicios__contenido {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 30% 70%;
+  }
 }
 
-.tablaPromo {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  background-color: white;
-  margin: 3rem;
+.servicios {
+  background-position: center;
+  width: vw;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.servicios__titulo {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.servicios__listado {
+  list-style: none;
+}
+@media screen and (min-width: 0px) {
+  .servicios__listado {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    text-align: center;
+    margin-right: 20px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .servicios__listado {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+}
+
+@media screen and (min-width: 0px) {
+  .servicio__detalles {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 800;
+  }
+}
+@media screen and (min-width: 768px) {
+  .servicio__detalles {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+}
+
+.tarjetaServicios1 {
+  background-image: url("../../../img/massage-g9a3a5baf7_1920.jpg");
+}
+
+.tarjetaServicios2 {
+  background-image: url("../../../img/massage-therapy-g0663311ae_1280.jpg");
+}
+
+.tarjetaServicios3 {
+  background-image: url("../../../img/spahotel1.jpg");
 }
 
 .sobreNosotros {
   display: flex;
 }
+@media screen and (min-width: 0px) {
+  .sobreNosotros {
+    flex-direction: column;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .sobreNosotros {
+    flex-direction: row;
+  }
+}
+
+.sobreNosotros__parrafo {
+  text-align: center;
+  margin-top: rem;
+  justify-items: center;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 2;
+  color: rebeccapurple;
+  padding: 0 1rem 1rem 1rem;
+}
 
 .sobreNosotros__historia {
   justify-content: right;
-  margin: 1rem;
-  margin-top: 60px;
+  margin: 2rem;
   text-align: center;
+  background-color: snow;
 }
 
-#videoSalon {
+.sobreNosotros__titulo {
+  margin-top: 3rem;
+}
+
+.videoSalon {
   justify-content: left;
   margin: 2rem;
+}
+@media screen and (min-width: 0px) {
+  .videoSalon iframe {
+    height: 400px;
+    width: 100%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .videoSalon iframe {
+    height: 400px;
+    width: 500px;
+  }
 }
 
 .carousel {
   width: 790px;
-  height: 460px;
+  height: 100%;
+  margin-top: 2rem;
+  margin-bottom: 5rem;
 }
 
 .staff__cv {

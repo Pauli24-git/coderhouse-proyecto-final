@@ -1,20 +1,59 @@
 .sobreNosotros {
     display: flex;
+
+    @include responsive(sm){
+        flex-direction: column;
+    }
+
+    @include responsive(lg){
+        flex-direction: row;
+    }
+}
+
+.sobreNosotros__parrafo {
+    text-align: center;
+    margin-top: rem;
+    justify-items: center;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 2;
+    color: rebeccapurple;
+    padding: 0 1rem 1rem 1rem;
 }
 
 .sobreNosotros__historia {
     justify-content: right;
-    margin: 1rem;
-    margin-top: 60px;
+    margin: 2rem;
+
     text-align: center;
+    background-color: snow;
 }
 
-#videoSalon {
+.sobreNosotros__titulo {
+    margin-top: 3rem;
+
+}
+
+.videoSalon {
     justify-content: left;
     margin: 2rem;
+    & iframe{
+
+        @include responsive(sm){
+            height: 400px;
+            width:100%;
+        }
+    
+        @include responsive(lg){
+            height: 400px;
+            width:500px;
+        }
+    }
 }
 
 .carousel {
     width: 790px;
-    height: 460px;
+    height: 100%;
+    margin-top: 2rem;
+    margin-bottom: 5rem;
 }

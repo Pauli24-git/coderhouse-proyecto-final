@@ -6,7 +6,6 @@
     display: flex;
     flex-wrap: wrap;
     row-gap: 1rem;
-    ;
     justify-content: space-around;
     align-items: center;
     margin: 1rem;
@@ -26,37 +25,38 @@
     width: 100%;
 }
 
-.card {
-    background-color: #fff;
-    border-radius: 0.5rem;
-    box-shadow: 0.05rem 0.1rem 0.3rem -0.03rem rgba(0, 0, 0, 0.45);
-    padding-bottom: 1rem;
-    margin-right: 6rem;
-
-    img {
-        border-radius: 0.5rem 0.5rem 0 0;
-        width: 100%;
-        object-fit: cover;
-        aspect-ratio: 4/3;
-        mix-blend-mode: overlay;
-    }
-}
 
 .tarjetasHotSale {
     display: flex;
     flex-wrap: wrap;
     row-gap: 1rem;
-    ;
     justify-content: space-around;
     align-items: center;
 
-    @include responsive(sm) {
-        margin-left: 20%;
-    }
-
     @include responsive(md) {
-        margin: 1rem;
-        margin-left: 5rem;
+        margin: 2rem;
     }
+}
 
+.card {
+    height: 40rem;
+}
+
+.btn {
+    background-color: lightpink;
+    border-color: lightpink;
+    color: black;
+    width: 100%;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.btn:hover {
+    background-color: rosybrown;
+    border-color: rosybrown;
+}
+
+.card-body {
+    text-align: center;
+    margin-top: 1rem;
 }

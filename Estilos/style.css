@@ -9,12 +9,6 @@
   box-sizing: border-box;
 }
 
-a {
-  text-decoration: none;
-  color: #790C5A;
-  transition: background-color 0.5s;
-}
-
 body {
   background-color: #F1D4D4;
 }
@@ -39,6 +33,16 @@ h3 {
   font-weight: bolder;
   font-style: italic;
   color: #790C5A;
+}
+
+a {
+  text-decoration: none;
+  color: #790C5A;
+  transition: background-color 0.5s;
+}
+
+a:hover {
+  color: darkblue;
 }
 
 .barraDeNavegacion__imagen {
@@ -206,22 +210,6 @@ footer {
   width: 100%;
 }
 
-.card {
-  background-color: #fff;
-  border-radius: 0.5rem;
-  box-shadow: 0.05rem 0.1rem 0.3rem -0.03rem rgba(0, 0, 0, 0.45);
-  padding-bottom: 1rem;
-  margin-right: 6rem;
-}
-.card img {
-  border-radius: 0.5rem 0.5rem 0 0;
-  width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  aspect-ratio: 4/3;
-  mix-blend-mode: overlay;
-}
-
 .tarjetasHotSale {
   display: flex;
   flex-wrap: wrap;
@@ -229,16 +217,33 @@ footer {
   justify-content: space-around;
   align-items: center;
 }
-@media screen and (min-width: 0px) {
-  .tarjetasHotSale {
-    margin-left: 20%;
-  }
-}
 @media screen and (min-width: 768px) {
   .tarjetasHotSale {
-    margin: 1rem;
-    margin-left: 5rem;
+    margin: 2rem;
   }
+}
+
+.card {
+  height: 40rem;
+}
+
+.btn {
+  background-color: lightpink;
+  border-color: lightpink;
+  color: black;
+  width: 100%;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.btn:hover {
+  background-color: rosybrown;
+  border-color: rosybrown;
+}
+
+.card-body {
+  text-align: center;
+  margin-top: 1rem;
 }
 
 .promos__hijo {
@@ -262,6 +267,201 @@ footer {
 
 .seccionPromo {
   width: 18rem;
+}
+
+.gridywrap div[class*=gridy] {
+  background: #eee;
+  box-shadow: inset 0 0 0 1px #ddd;
+  padding: 15px;
+  float: left;
+  position: relative;
+}
+
+.gridywrap .gridy-1,
+.gridywrap .gridy-2,
+.gridywrap .gridy-3 {
+  width: 320px;
+  overflow: hidden;
+}
+
+.gridywrap .gridy-1 {
+  width: 100%;
+}
+
+.gridywrap .gridy-2 {
+  width: 100%;
+}
+
+.gridywrap .gridy-3 {
+  width: 100%;
+}
+
+.gridywrap .gridyhe-1 {
+  height: 320px;
+}
+
+.gridywrap .gridyhe-2 {
+  height: 320px;
+}
+
+@media screen and (min-width: 640px) {
+  .gridywrap .gridyhe-2 {
+    height: 320px;
+  }
+
+  .gridywrap {
+    width: 100%;
+  }
+
+  .gridywrap .gridy-1 {
+    width: 50%;
+  }
+
+  .gridywrap .gridy-2 {
+    width: 50%;
+  }
+
+  .gridywrap .gridy-3 {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .gridywrap .gridy-1 {
+    width: 33.3%;
+  }
+
+  .gridywrap .gridy-2 {
+    width: 66.6%;
+  }
+
+  .gridywrap .gridy-3 {
+    width: 100%;
+  }
+
+  .gridywrap .gridyhe-2 {
+    height: 640px;
+  }
+}
+.gridywrap .gridimg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  background-position: center center;
+  background-size: cover;
+}
+
+.gridywrap .gridimg img {
+  width: 100%;
+}
+
+.gridywrap .gridinfo {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.4);
+  text-align: center;
+  transition: all 0.8s;
+}
+
+.gridywrap .gridinfo h3 {
+  font-size: 24px;
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 130px 0 20px;
+  position: relative;
+}
+
+.gridywrap .gridinfo .gridmeta {
+  transition-delay: 0.25s;
+}
+
+.gridywrap .gridinfo .gridmeta p {
+  display: inline-block;
+  font-size: 13px;
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+.gridywrap .gridinfo .gridmeta p i {
+  margin-right: 5px;
+}
+
+.gridywrap .gridinfo .gridmeta p.gridwho {
+  margin-left: 25px;
+}
+
+.gridywrap .gridinfo p.gridexerpt {
+  width: 60%;
+  margin: 0 auto;
+  line-height: 22px;
+  margin-bottom: 25px;
+  color: #fff;
+  transition-delay: 0.5s;
+}
+
+.gridywrap .gridinfo * {
+  opacity: 0;
+  transition: all 0.8s;
+}
+
+.gridywrap .gridinfo h3 {
+  opacity: 1;
+}
+
+.gridywrap .gridinfo .grid-btn:hover {
+  width: 75px;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.gridywrap .gridinfo .grid-btn span {
+  opacity: 0;
+  display: none;
+  transition: opacity 0.8s;
+}
+
+.gridywrap .gridinfo:hover * {
+  opacity: 0.7;
+}
+
+.gridywrap .gridinfo:hover p {
+  opacity: 1;
+}
+
+.gridywrap .gridinfo:hover {
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.gridywrap .gridinfo:hover h3 {
+  margin-top: 70px;
+  opacity: 1;
+}
+
+.intro {
+  text-align: center;
+  padding: 25px;
+  background: #F1D4D4;
+  color: #ddd;
+}
+
+h1 {
+  font-size: 48px;
+  font-weight: 300;
+  padding: 15px 0;
+}
+
+.intro p {
+  opacity: 0.5;
+  font-size: 12px;
+}
+
+.intro p a {
+  color: #FA8CD3;
 }
 
 .servicios {
@@ -313,10 +513,18 @@ footer {
   grid-column-end: 3;
   grid-row-start: 1;
   grid-row-end: 2;
+  text-shadow: white 2px 0 30px;
+  font-weight: bolder;
+  color: black;
 }
 
 .servicios__listado {
   list-style: none;
+}
+.servicios__listado li {
+  font-size: larger;
+  font-weight: 600;
+  text-shadow: white 1px 0 40px;
 }
 @media screen and (min-width: 0px) {
   .servicios__listado {
@@ -358,15 +566,24 @@ footer {
 }
 
 .tarjetaServicios1 {
-  background-image: url("../../../img/massage-g9a3a5baf7_1920.jpg");
+  background-image: url("../../../img/woman-g76d44a5b1_1920.jpg");
 }
 
-.tarjetaServicios2 {
-  background-image: url("../../../img/massage-therapy-g0663311ae_1280.jpg");
+.tarjetaServicios4 {
+  background-image: url("../../../img/relaxation-gfbd3ae2e5_1920.jpg");
 }
 
 .tarjetaServicios3 {
-  background-image: url("../../../img/spahotel1.jpg");
+  background-image: url("../../../img/sunbeds-gf9e1a0ce4_1920.jpg");
+}
+
+.tarjetaServicios2 {
+  background-image: url("../../../img/feet-g7b2c59949_1920.jpg");
+}
+
+.servicio__precio {
+  font-weight: bolder;
+  text-shadow: white 1px 0 30px;
 }
 
 .sobreNosotros {

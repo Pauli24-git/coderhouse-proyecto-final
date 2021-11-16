@@ -4,11 +4,6 @@
     box-sizing: border-box;
 }
 
-a {
-    text-decoration: none;
-    color: #790C5A;
-    transition: background-color .5s;
-}
 
 body {
     background-color: #F1D4D4;
@@ -31,4 +26,14 @@ h3 {
     font-weight: bolder;
     font-style: italic;
     color: #790C5A;
+}
+
+a {
+    text-decoration: none;
+    color: #790C5A;
+    transition: background-color .5s;
+}
+
+a:hover {
+    color:darkblue;
 }
